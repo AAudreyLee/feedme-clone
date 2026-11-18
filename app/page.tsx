@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 import { ThemeToggle } from "@/components/theme-toggle";
+import { buttonVariants } from "@/components/ui/button";
 import { Converter } from "@/features/page-to-markdown/converter";
 
 export default function Home() {
@@ -11,7 +14,12 @@ export default function Home() {
           </span>
           feedme
         </div>
-        <ThemeToggle />
+        <div className="flex items-center gap-1">
+          <Link href="/settings" className={buttonVariants({ variant: "ghost" })}>
+            설정
+          </Link>
+          <ThemeToggle />
+        </div>
       </header>
       <div className="flex flex-col gap-2">
         <h1 className="font-heading text-2xl font-semibold tracking-tight text-balance sm:text-[28px]">
