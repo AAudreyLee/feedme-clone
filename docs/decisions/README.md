@@ -4,3 +4,4 @@
 
 - [ui-composition](ui-composition.md) — Read when choosing UI components, page composition, visual tokens, or custom interface boundaries.
 - [dependency-versions](dependency-versions.md) — Read when upgrading dependencies, pinning versions, or wondering why TypeScript stays on 6.x.
+- [page-to-markdown](page-to-markdown.md) — Read when changing URL fetching, `defuddle` extraction, copy/download content, or how text is sent to ChatGPT and Claude.
