@@ -1,0 +1,8 @@
+#:schema https://supabase.com/schemas/config/v1.json
+# Only the settings this app manages are declared. `supabase config push`
+# leaves every property that is not declared here unchanged on the hosted project.
+project_id = "feedme-clone"
+
+[auth.email]
+# Email/password sign-up signs the user in immediately (no confirmation mail).
+enable_confirmations = false
