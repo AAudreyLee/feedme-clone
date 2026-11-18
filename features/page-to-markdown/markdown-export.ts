@@ -7,6 +7,6 @@ export function fullMarkdown(page: Pick<ConvertedPage, "title" | "markdown">): s
 
 /** 파일명에 쓸 수 없는 문자를 뺀 이름. 비면 도메인을 쓴다. */
 export function markdownFileName(page: Pick<ConvertedPage, "title" | "domain">): string {
-  const name = page.title.replace(/[\/:*?"<>|]/g, "").trim();
+  const name = page.title.replace(/[\\/:*?"<>|]/g, "").trim();
   return `${name || page.domain}.md`;
 }

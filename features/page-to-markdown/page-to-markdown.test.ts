@@ -10,7 +10,7 @@ describe("markdown-export", () => {
     expect(fullMarkdown({ title: "T", markdown: "body" })).toBe("# T\n\nbody");
   });
   test("파일명에서 쓸 수 없는 문자를 빼고, 비면 도메인을 쓴다", () => {
-    expect(markdownFileName({ title: 'a/b:c?"', domain: "x.com" })).toBe("abc.md");
+    expect(markdownFileName({ title: 'a/b\\c:d?"', domain: "x.com" })).toBe("abcd.md");
     expect(markdownFileName({ title: "  ", domain: "x.com" })).toBe("x.com.md");
   });
 });

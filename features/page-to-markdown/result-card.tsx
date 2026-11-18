@@ -8,7 +8,7 @@ import type { ConvertedPage } from "./types";
 export function ResultCard({ page, url }: { page: ConvertedPage; url: string }) {
   const meta = [
     page.author && <span key="a">{page.author}</span>,
-    page.site !== page.author && page.site !== page.domain &&<span key="s">{page.site}</span>,
+    page.site !== page.author && page.site !== page.domain && <span key="s">{page.site}</span>,
     <a key="d" href={url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-4">
       {page.domain}
     </a>,
